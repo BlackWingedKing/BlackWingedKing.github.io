@@ -23,9 +23,9 @@ Ritesh Goru is a fourth year undergraduate in electrical engineering at IIT Bomb
         </div>
 
         <div class="span2">
-        <a href="../assets/headshot.jpg">
-            <img src="../assets/headshot.jpg"
-                  title="Blue Ham" alt="Blue Ham"/></a>
+        <a href="../assets/pic.jpg">
+            <img src="../assets/pic.jpg"
+                  title="Ritesh Goru" alt="Ritesh Goru"/></a>
         </div>
     </div>
 </div>
