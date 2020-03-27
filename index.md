@@ -1,8 +1,8 @@
 ---
 layout: frontpage
 title: Ritesh Goru
-description: Ritesh Goru is a fourth year undergraduate in electrical engineering at IIT Bombay. 
-keywords: Ritesh, Goru, , recycling, mail, being a good boy
+description: I am a fourth year undergraduate in electrical engineering at IIT Bombay. We
+keywords: Ritesh, Goru
 ---
 
 Ritesh Goru is a fourth year undergraduate in electrical engineering at IIT Bombay. Website to be updated in 2-3 days
