@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Research
-description: Ritesh Goru's research
+title: Publications
+description: Ritesh Goru's Publications
 ---
 
 
 
-#### <u>None</u>
+### <u>Batch active learning</u>
 *Content to be updated*
 
-[Dont Click here]({{ BASE_PATH}}/pages/working_papers/sample-working-paper1.pdf)
+<!-- [Dont Click here]({{ BASE_PATH}}/pages/working_papers/sample-working-paper1.pdf) -->
 
 
 <!-- Note: this is how to write a comment in HTML. Everything in here won't show up on your webpage.-->
