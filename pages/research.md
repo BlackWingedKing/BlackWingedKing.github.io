@@ -6,6 +6,8 @@ description: Ritesh Goru's research
 
 *Research statement to be added here*
 
+---
+
 #### <u>Batch Active Learning for Perceptual Distance Metric learning</u>
 *Content to be updated*
 

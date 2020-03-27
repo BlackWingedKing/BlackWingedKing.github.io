@@ -26,17 +26,25 @@ These are unorganised. These mostly include the papers I read for some of my pro
 - [Global Convergence of SGHMC for Non-Convex Stochastic Optimisation]()
 - [Generalised Solutions for Sylvester Equations]()
 - [Iterative Methods for solving Sylvester Equations]()
+- [On the Role of Tracking in Stationary environments]()
+- [Nonlinear Gossip]()
+- [Deep Learning generalises because the parameter - function map is biased towards simple functions]()
+- [Small Steps and Giant Leaps: Minimal Newton Solvers for Deep Learning]()
+- [DAG with NOTEARS]()
+- 
 
 ### <a name="My-Notes"></a>My-Notes
-These are some write-up's by me
+These are some write-up's by me, Again these will be organised in somedays
 - [Gaussian Processes an Overview]()
 - [Active Learning]()
 - [Perceptual Distance Metric Learning]()
 - [Solving Sylvester Equations]()
 - [Stochastic Approximation - 1]()
 - [Stochastic Approximation - 2]()
-- [Imitation Learning]()
+- [Imitation Learning for Robotic Surgery]()
 - [Brownian Motion]()
+- [Distributed Stochastic Gradient Methods]()
+- 
 
 ---
 ### <a name="Presentations"></a>Presentations
@@ -44,15 +52,20 @@ These are some write-up's by me
 - [Undergrad Project - 2]()
 - [RnD - 1]()
 - [RnD - 2]()
+- 
 
 ---
 ### <a name="Non-Technical"></a>Non-Technical
-Most of these are my views on
-- [How I prepare my schedule]()
-- [Learning Keyboard]()
-- [Mentalism and Mind Reading]()
-- [A mind of a Mnemonist - book summary by me]()
+- [How I prepare my schedule]({{ BASE_PATH }}/posts/schedule.html)
+- [Learning Piano]({{ BASE_PATH }}/posts/keyboard.html)
+- [Mentalism and Mind Reading]({{ BASE_PATH }}/posts/mentalism.html)
+- [A mind of a Mnemonist - book summary]({{ BASE_PATH }}/posts/mnemonist.html)
+- 
 
 ---
 ### <a name="Resources"></a>Resources
-- []()
+- [The Yossil Gil LateX Guide for Graduate Students](http://www.cs.technion.ac.il/~yogi/latex.html)
+- [Piano Video Lessons](https://courses.pianovideolessons.com/)
+- [Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/) by Ryan Chadwick
+- [Self Authoring Program](https://www.youtube.com/watch?v=CZ_g0J2SPpM) by Jordan Peterson
+- 
