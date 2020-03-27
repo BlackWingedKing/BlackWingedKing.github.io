@@ -4,19 +4,19 @@ title: Research
 description: Ritesh Goru's research
 ---
 
+*Research statement to be added here*
 
-
-#### <u>None</u>
+## <u>Active Learning for Perceptual Distance Metric learning</u>
 *Content to be updated*
 
-[Dont Click here]({{ BASE_PATH}}/pages/working_papers/sample-working-paper1.pdf)
+## <u>Distributed Stochastic Gradient Descent</u>
+*Content to be updated*
 
+## <u>Imitation Learning for Robotic Surgery</u>
+*Content to be updated*
 
-<!-- Note: this is how to write a comment in HTML. Everything in here won't show up on your webpage.-->
+## <u>Perceptual Distance Metric Learning over odor data</u>
+*Content to be updated*
 
-<!--
-To increase the size of the title, use fewer # in front of the paper title.
-To decrease the size of the title, use more #. 
-To remove the italics, remove the * before and after the description
-To remove the underline from the title, remove the <u> tags (<u> and </u>)
--->
+## <u>Video action Recognition using Recurrent Attention</u>
+*Content to be updated*
