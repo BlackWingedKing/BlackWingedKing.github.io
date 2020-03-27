@@ -1,4 +1,13 @@
 ---
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118614554-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118614554-1');
+</script>
 layout: frontpage
 title: Ritesh Goru
 description: I am a fourth year undergraduate in electrical engineering at IIT Bombay. We
@@ -9,19 +18,7 @@ Ritesh Goru is a fourth year undergraduate in electrical engineering at IIT Bomb
 
 [curriculum vitae ![CV as pdf]({{ BASE_PATH }}/pages/icons16/pdf-icon.png)]({{ BASE_PATH }}/assets/CV.pdf)<br/>
 
-
 ---
-
-<div class="navbar">
-  <div class="navbar-inner">
-      <ul class="nav">
-          <li><a href="{{ BASE_PATH }}/assets/CV1.pdf">CV</a></li>
-          <li><a href="https://github.com/BlackWingedKing">GitHub</a></li>
-          <!-- <li><a href="https://blackwingedking.github.io/blog">Blog</a></li> -->
-          <!-- <li><a href="https://twitter.com/dog_feelings">Twitter (@dog_feelings)</a></li> -->
-      </ul>
-  </div>
-</div>
 
 <div class="container">
 <h4><a name="contact"></a>contact</h4>
