@@ -15,8 +15,5 @@ description: Ritesh Goru's research
 ## <u>Imitation Learning for Robotic Surgery</u>
 *Content to be updated*
 
-## <u>Perceptual Distance Metric Learning over odor data</u>
-*Content to be updated*
-
 ## <u>Video action Recognition using Recurrent Attention</u>
 *Content to be updated*
