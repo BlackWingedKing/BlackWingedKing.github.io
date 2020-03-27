@@ -10,11 +10,11 @@
 </script>
 layout: frontpage
 title: Ritesh Goru
-description: I am a fourth year undergraduate in electrical engineering at IIT Bombay. We
+description: Ritesh Goru is an fourth year undergrad at IIT Bombay
 keywords: Ritesh, Goru
 ---
 
-Ritesh Goru is a fourth year undergraduate in electrical engineering at IIT Bombay. Website to be updated in 2-3 days
+I am a fourth year undergraduate in electrical engineering at IIT Bombay. I'm interested in mathematics and machine learning
 
 [curriculum vitae ![CV as pdf]({{ BASE_PATH }}/pages/icons16/pdf-icon.png)]({{ BASE_PATH }}/assets/CV.pdf)<br/>
 
