@@ -33,9 +33,9 @@ Ritesh Goru is a fourth year undergraduate in electrical engineering at IIT Bomb
 <div class="navbar">
   <div class="navbar-inner">
       <ul class="nav">
-          <li><a href="{{ BASE_PATH }}/assets/CV1.pdf">cv</a></li>
+          <li><a href="{{ BASE_PATH }}/assets/CV1.pdf">CV</a></li>
           <li><a href="https://github.com/BlackWingedKing">GitHub</a></li>
-          <li><a href="https://blackwingedking.github.io/blog">Blog</a></li>
+          <!-- <li><a href="https://blackwingedking.github.io/blog">Blog</a></li> -->
           <!-- <li><a href="https://twitter.com/dog_feelings">Twitter (@dog_feelings)</a></li> -->
       </ul>
   </div>
