@@ -5,7 +5,7 @@ description: Ritesh Goru is an fourth year undergrad at IIT Bombay
 keywords: Ritesh, Goru
 ---
 ---
-**Note:** I just started updating My website. So, things are a bit messy in this now. Come back after 29th march to view the updated version
+**Note:** I just started updating My website. So, things are a bit messy in this now. Come back after 3rd April to view the updated version
 
 I am a fourth year undergraduate in electrical engineering at IIT Bombay. I'm interested in mathematics and machine learning
 
