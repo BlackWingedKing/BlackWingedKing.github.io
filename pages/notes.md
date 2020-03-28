@@ -31,6 +31,7 @@ These are unorganised. These mostly include the papers I read for some of my pro
 - [Deep Learning generalises because the parameter - function map is biased towards simple functions]()
 - [Small Steps and Giant Leaps: Minimal Newton Solvers for Deep Learning]()
 - [DAG with NOTEARS]()
+- [Audio-Visual Scene Analysis with Self-Supervised Multisensory Features]()
 - 
 
 ### <a name="My-Notes"></a>My-Notes
@@ -56,7 +57,7 @@ These are some write-up's by me, Again these will be organised in somedays
 
 ---
 ### <a name="Non-Technical"></a>Non-Technical
-- [How I prepare my schedule]({{ BASE_PATH }}/posts/schedule.html)
+- [Procrastination and Scheduling]({{ BASE_PATH }}/posts/schedule.html)
 - [Learning Piano]({{ BASE_PATH }}/posts/keyboard.html)
 - [Mentalism and Mind Reading]({{ BASE_PATH }}/posts/mentalism.html)
 - [A mind of a Mnemonist - book summary]({{ BASE_PATH }}/posts/mnemonist.html)

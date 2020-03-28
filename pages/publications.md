@@ -6,17 +6,7 @@ description: Ritesh Goru's Publications
 
 
 
-### <u>Batch active learning</u>
+### <u>Batch Decorrelation for Active Metric Learning</u>
+Submitted in IJCAI-2020
+
 *Content to be updated*
-
-<!-- [Dont Click here]({{ BASE_PATH}}/pages/working_papers/sample-working-paper1.pdf) -->
-
-
-<!-- Note: this is how to write a comment in HTML. Everything in here won't show up on your webpage.-->
-
-<!--
-To increase the size of the title, use fewer # in front of the paper title.
-To decrease the size of the title, use more #. 
-To remove the italics, remove the * before and after the description
-To remove the underline from the title, remove the <u> tags (<u> and </u>)
--->

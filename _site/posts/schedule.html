@@ -4,8 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>How I schedule</title>
-    <meta name="description" content="a post on scheduling">
+    <title>Procrastination and Scheduling</title>
+    <meta name="description" content="a post on procrastination and scheduling">
     
     <meta name="author" content="Ritesh Goru">
 
@@ -21,6 +21,11 @@
     <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
     <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
     <link href="/assets/themes/twitter/css/riteshgoru.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Mathjax Support -->
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
 
     <!-- Le fav and touch icons - this is where you can add a little icon that will show up in the address bar next to the addrss adn in search history next to website name
     <link rel="SHORTCUT ICON" href="/assets/me.ico"/>
@@ -62,12 +67,68 @@
         
 
 <div class="page-header">
-  <h2>How I schedule </h2>
+  <h2>Procrastination and Scheduling </h2>
 </div>
 
 <div class="row-fluid">
   <div class="span12">
-    
+    <h3 id="procrastination">Procrastination</h3>
+<p><img src="/assets/procrastination.jpg" alt="procrastination" /></p>
+
+<p><a href="https://en.wikipedia.org/wiki/Procrastination">Procrastination</a> - There’s no one who haven’t heard about it. Almost all of us procrastinate.<br />
+There’s been a lot of psychological research going on, and researchers correlate this behaviour with various other disorders like ADHD, stress, anxiety etc. It might be a symptom indicating a mental disorder. <br />
+Nevertheless, some perfectly healthy people still do it. In this post I will provide a different view of procrastination.</p>
+
+<h3 id="why-people-procrastinate">Why People Procrastinate</h3>
+<p><a href="https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator?language=en">This</a> Ted Talk by <a href="https://waitbutwhy.com/">Tim Urban</a> explains it better in simpler terms. So, It’s a must watch. 
+<img src="/assets/why_procrastinate.png" alt="wait but why?" /></p>
+
+<p>I wouldn’t go into the details of the talk but here are some key take aways from the talk</p>
+<ol>
+  <li>It introduces <strong><em>Instant Gratification Monkey</em></strong> which disrupts the rational decision making.</li>
+  <li>The <strong><em>Panic monster</em></strong> which comes and scares away the monkey when we are an <script type="math/tex">\epsilon</script> away from the deadline.</li>
+</ol>
+
+<h3 id="the-mdp-model">The MDP model</h3>
+<p>For those of you who are acquainted with Reinforcement Learning must have heard about <a href="https://en.wikipedia.org/wiki/Markov_decision_process">MDP’s</a>.<br />
+So, Basically what I say is The actions we take in life and the outcomes that we experience can be modelled as a MDP (Here, it isn’t exactly Markovian but let’s approximate it for simplicity)</p>
+
+<p align="center">
+  <img src="/assets/MDP.png" alt="dominating_sets_example2" />
+  <br />
+  <em>MDP description</em>
+</p>
+
+<p>An MDP can be described with the tuple <script type="math/tex">(s, a, r)</script>. Where</p>
+<ul>
+  <li><script type="math/tex">s</script> is the current state</li>
+  <li><script type="math/tex">a</script> is the action taken</li>
+  <li><script type="math/tex">r</script> is the reward gained (can be positive or negative)</li>
+</ul>
+
+<p>Let’s assume the transitions are deterministic since, we are mostly under control of what we do.<br />
+Now, the paths we take must be such that the reward is maximised</p>
+
+<script type="math/tex; mode=display">R = \sum^{t=n}_{t=0} \gamma^{t}.r_{t}</script>
+
+<p>Where</p>
+<ul>
+  <li><script type="math/tex">\gamma</script> is the discount factor</li>
+</ul>
+
+<p>Our objective is to maximise the Total Reward (<script type="math/tex">R</script>), over the path we take, ie over (<script type="math/tex">s_{1}, s_{2}, ..s_{n}</script>), (<script type="math/tex">a_{1}, a_{2}, ..a_{n}</script>).<br />
+In our life the <script type="math/tex">\gamma</script> has a lot of importance.<br />
+<script type="math/tex">\gamma</script> is</p>
+<ul>
+  <li>0 for chronic procrastinators. So they just enjoy the current moment lazing off and reward is the pleasure they take from lazing off</li>
+  <li>Higher for workaholics or non-procrastinators</li>
+</ul>
+
+<p>Let me explain this with an example.</p>
+
+<h3 id="an-example">An Example</h3>
+<p>Let’s say a person A has a deadline for a project, a week from now.<br />
+He can</p>
 
   </div>
 </div>
