@@ -11,3 +11,6 @@ During my Undergrad, I spent 3 years working at [Innovation cell](http://www.umi
 
 ### <u>SeDriCa</u>
 *Content to be updated*
+
+### <u>ASME Student Design Challenge</u>
+*Content to be updated*

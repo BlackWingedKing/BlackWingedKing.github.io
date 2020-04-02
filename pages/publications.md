@@ -7,6 +7,6 @@ description: Ritesh Goru's Publications
 
 
 ### <u>Batch Decorrelation for Active Metric Learning</u>
-Submitted in IJCAI-2020
+Submitted to IJCAI-2020
 
-*Content to be updated*
+*Paper Under Review*

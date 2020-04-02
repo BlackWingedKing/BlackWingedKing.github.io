@@ -19,6 +19,7 @@ Inspired from [lil'log](https://lilianweng.github.io/lil-log/) and [feynman's te
 
 ### <a name="Paper-summaries"></a>Paper-summaries
 These are unorganised. These mostly include the papers I read for some of my projects. I will try to organise them in a few days
+- [DAG with NOTEARS]({{ BASE_PATH }}/posts/dag_no_tears.html)
 - [Continuous time bayesian networks]()
 - [Underdamped Langevin MCMC: A non-asymptotic analysis]()
 - [Why random reshuffling beats stochastic gradient descent]()
@@ -30,8 +31,9 @@ These are unorganised. These mostly include the papers I read for some of my pro
 - [Nonlinear Gossip]()
 - [Deep Learning generalises because the parameter - function map is biased towards simple functions]()
 - [Small Steps and Giant Leaps: Minimal Newton Solvers for Deep Learning]()
-- [DAG with NOTEARS]()
 - [Audio-Visual Scene Analysis with Self-Supervised Multisensory Features]()
+- [Deep Bayesian Active Learning for Multiple Correct Outputs]()
+- [Bayesian representation learning with oracle constraints]()
 - 
 
 ### <a name="My-Notes"></a>My-Notes
@@ -66,7 +68,7 @@ These are some write-up's by me, Again these will be organised in somedays
 ---
 ### <a name="Resources"></a>Resources
 - [The Yossil Gil LateX Guide for Graduate Students](http://www.cs.technion.ac.il/~yogi/latex.html)
-- [Piano Video Lessons](https://courses.pianovideolessons.com/)
+- [Piano Video Lessons](https://courses.pianovideolessons.com/) by Lisa Pianista
 - [Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/) by Ryan Chadwick
 - [Self Authoring Program](https://www.youtube.com/watch?v=CZ_g0J2SPpM) by Jordan Peterson
-- 
+- [Markov Chains in Latex](http://steventhornton.ca/blog/markov-chains-in-latex.html) by Steven Thornton

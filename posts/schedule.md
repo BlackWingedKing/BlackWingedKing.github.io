@@ -53,3 +53,9 @@ Let me explain this with an example.
 ### An Example
 Let's say a person A has a deadline for a project, a week from now.  
 He can  
+---
+#### To-do 
+- [ ] complete the example
+- [ ] Remedies for procrastination
+- [ ] Need for Scheduling
+- [ ] How I schedule
