@@ -4,10 +4,8 @@ title: Ritesh Goru
 description: Ritesh Goru is an fourth year undergrad at IIT Bombay
 keywords: Ritesh, Goru
 ---
----
-**Note:** I just started updating My website. So, things are a bit messy in this now. Come back after 3rd April to view the updated version
-
-I am a fourth year undergraduate in Electrical Engineering at [IIT Bombay](http://iitb.ac.in/). I'm interested in Stochastic Approximation and MCMC techniques for Optimisation. I'm currently doing my undergrad project on distributed SGD with straggler mitigation with [Prof. Vivek Bokar](https://en.wikipedia.org/wiki/Vivek_Borkar) and [Prof. Nikhil Karamchandani](https://sites.google.com/site/nikhilkaram/). 
+<br>
+I am a fourth-year undergraduate in Electrical Engineering at [IIT Bombay](http://iitb.ac.in/). I'm interested in Stochastic Approximation and MCMC techniques for Optimisation. I'm currently doing my undergrad project on distributed SGD with straggler mitigation with [Prof. Vivek Bokar](https://en.wikipedia.org/wiki/Vivek_Borkar) and [Prof. Nikhil Karamchandani](https://sites.google.com/site/nikhilkaram/). 
 
 I'm also working with [Prof. Subhasis Chaudhari](https://en.wikipedia.org/wiki/Subhasis_Chaudhuri) on Active learning for Distance Metric Learning.
 
@@ -15,7 +13,7 @@ I was a visiting research student at Purdue University under Prof. [Juan Wachs](
 
 For my Research projects and implementations look at [research]({{ BASE_PATH }}/pages/research.html) Tab. And for Technical/application based projects look at [projects]({{ BASE_PATH }}/pages/projects.html)
 
-I maintain a notes for almost everything I learn. Have a look at [notes/blog]({{ BASE_PATH }}/pages/notes.html).
+I maintain notes for almost everything I learn. Have a look at [notes/blog]({{ BASE_PATH }}/pages/notes.html).
 
 [curriculum vitae ![CV as pdf]({{ BASE_PATH }}/pages/icons16/pdf-icon.png)]({{ BASE_PATH }}/assets/CV.pdf)<br/>
 
