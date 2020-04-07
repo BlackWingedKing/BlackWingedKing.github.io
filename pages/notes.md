@@ -4,7 +4,8 @@ title: Notes
 description: Ritesh Goru's Notes
 ---
 Inspired from [lil'log](https://lilianweng.github.io/lil-log/) and [feynman's technique](https://mattyford.com/blog/2014/1/23/the-feynman-technique-model), I started to log things I learn here.
- 
+
+**Note:** I have started digitising my notes at the start of covid break. So, many of these might be incomplete. Hopefully I would complete it by mid-April 
 <div class="navbar">
     <div class="navbar-inner">
         <ul class="nav">
