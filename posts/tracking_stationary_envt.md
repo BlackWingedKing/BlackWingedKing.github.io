@@ -6,6 +6,8 @@ description: paper summary
 
 **NOTE:**  This post assumes you are acquainted with basics of Reinforcement Learning
 
+[link to the paper](http://incompleteideas.net/papers/SKS-07.pdf)
+
 ### Introduction
 All the learning Algorithms have the same objective - to reach the optima (usually in finite amount of time). However there can be multiple optima and multiple ways in which it can be done. We can directly have an algorithm converge to an optima or track the best possible solution. Depending upon the type of setting in which we are in the performance of both might vary. The usual trend is to use the former for stationary envts and the latter for non-stationary ones, But this paper by \textbf{Richard S. Sutton} emphasises the importance of tracking in general by showing 3 stationary cases (\textit{temporally coherent}) in which tracking outperforms a converging algorithm
 

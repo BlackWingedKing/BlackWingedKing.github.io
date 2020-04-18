@@ -23,7 +23,7 @@ These are unorganised. These mostly include the papers I read for some of my pro
 - [DAG with NOTEARS]({{ BASE_PATH }}/posts/dag_no_tears.html)
 - [Small Steps and Giant Leaps: Minimal Newton Solvers for Deep Learning]({{ BASE_PATH }}/posts/newton_solvers.html)
 - [On the Role of Tracking in Stationary environments]({{ BASE_PATH }}/posts/tracking_stationary_envt.html)
-- [Continuous time bayesian networks]()
+- [Continuous time bayesian networks]({{ BASE_PATH }}/posts/ctbn.html)
 - [Underdamped Langevin MCMC: A non-asymptotic analysis]()
 - [Why random reshuffling beats stochastic gradient descent]()
 - [SGD Without Replacement]()
