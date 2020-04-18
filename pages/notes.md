@@ -21,6 +21,8 @@ Inspired from [lil'log](https://lilianweng.github.io/lil-log/) and [feynman's te
 ### <a name="Paper-summaries"></a>Paper-summaries
 These are unorganised. These mostly include the papers I read for some of my projects. I will try to organise them in a few days
 - [DAG with NOTEARS]({{ BASE_PATH }}/posts/dag_no_tears.html)
+- [Small Steps and Giant Leaps: Minimal Newton Solvers for Deep Learning]({{ BASE_PATH }}/posts/newton_solvers.html)
+- [On the Role of Tracking in Stationary environments]({{ BASE_PATH }}/posts/tracking_stationary_envt.html)
 - [Continuous time bayesian networks]()
 - [Underdamped Langevin MCMC: A non-asymptotic analysis]()
 - [Why random reshuffling beats stochastic gradient descent]()
@@ -28,10 +30,8 @@ These are unorganised. These mostly include the papers I read for some of my pro
 - [Global Convergence of SGHMC for Non-Convex Stochastic Optimisation]()
 - [Generalised Solutions for Sylvester Equations]()
 - [Iterative Methods for solving Sylvester Equations]()
-- [On the Role of Tracking in Stationary environments]()
 - [Nonlinear Gossip]()
 - [Deep Learning generalises because the parameter - function map is biased towards simple functions]()
-- [Small Steps and Giant Leaps: Minimal Newton Solvers for Deep Learning]({{ BASE_PATH }}/posts/newton_solvers.html)
 - [Audio-Visual Scene Analysis with Self-Supervised Multisensory Features]()
 - [Deep Bayesian Active Learning for Multiple Correct Outputs]()
 - [Bayesian representation learning with oracle constraints]()

@@ -40,7 +40,7 @@ Where,
 ### Score Function and Optimisation
 [WIP]
 
-#### To-Do
+### To-Do
 - [ ] Score function and optimisation
 - [ ] Algorithm
 - [ ] Thresholding
