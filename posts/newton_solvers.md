@@ -71,4 +71,5 @@ H, J are hessian and jacobian (of $$f(w_{t})$$) respectively
 - [ ] FMAD
 - [ ] RMAD
 - [ ] Algorithm
-- [ ] References
+- [ ] References and image ref
+- [ ] Grammar check
