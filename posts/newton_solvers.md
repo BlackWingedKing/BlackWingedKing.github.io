@@ -15,7 +15,7 @@ Optimisation is probably the most important part for Deep learning. The main pro
 Second order optimisers such as L-BFGS, CG and other quasi newton methods work very well in lower dimensions but they fail in the higher dimension because of the memory and computational growth is exponential w.r.t increase in dimension.  
 
 
-This paper proposes a new faster method - curve ball addressing the issues of 2nd order optimisers 
+This paper proposes a new faster method - ***curve ball*** addressing the issues of 2nd order optimisers 
 
 ### Optimisation Methods
 Let's quickly review the standard optimisation problem and the methods to solve it
@@ -42,11 +42,33 @@ Note that this update rule is discretisation of the ode
 \$$\dot{w} = -\nabla f(w)$$
 
 \$$\nabla f(w) = \sum_{x_{i} \in dataset} \nabla_{w}L(\phi(w, x_{i}))$$ 
-It's usually difficult to evaluate this term everytime (over all dataset). So we approximate the term $$\nabla f(w) \approx  \nabla_{w}L(\phi(w, x_{i}))$$ 
+It's usually difficult to evaluate this term everytime (over all dataset).
 
+<br />
+So we approximate the term as  
+\$$\nabla f(w) \approx \sum_{x_{i} \in batch} \nabla_{w}L(\phi(w, x_{i}))$$ 
+and this gives us Stochastic Gradient Descent (actually mini-batch). Which is a noisy discretisation of above ode
 
+$$\dot{w} = -\nabla f(w) + \xi$$
+
+The convergence is noisy but it may or may not get stuck at local minima and saddle points
 #### Newtons Method
+This is actually a root finding method for a function f  
+Since, minima is the root of $$\nabla f(w)$$ we can use this update rule to findout the
+\$$w_{t+1} = w_{t} - \frac{1}{\nabla^{2}f(w_{t})}\nabla f(w_{t})$$
 
-### Problem Formulation
+We can think of this as newton's method provides a value for the step size parameter $$\alpha_{t}$$
+\$$\alpha_{t} = \frac{1}{\nabla^{2}f(w_{t})}$$  
 
-[WIP]
+For vector $$\bar{w_{t}}$$ we have,
+\$$\bar{w_{t+1}} = \bar{w_{t}} - H^{-1}(w_{t})J(w_{t})$$
+
+H, J are hessian and jacobian (of $$f(w_{t})$$) respectively
+### FMAD and RMAD
+**[WIP]**
+
+### To-Do
+- [ ] FMAD
+- [ ] RMAD
+- [ ] Algorithm
+- [ ] References

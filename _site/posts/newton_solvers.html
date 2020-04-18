@@ -81,7 +81,7 @@ Optimisation is probably the most important part for Deep learning. The main pro
 <!-- and there are a lot of variants of optimisers.   -->
 <p>Second order optimisers such as L-BFGS, CG and other quasi newton methods work very well in lower dimensions but they fail in the higher dimension because of the memory and computational growth is exponential w.r.t increase in dimension.</p>
 
-<p>This paper proposes a new faster method - curve ball addressing the issues of 2nd order optimisers</p>
+<p>This paper proposes a new faster method - <strong><em>curve ball</em></strong> addressing the issues of 2nd order optimisers</p>
 
 <h3 id="optimisation-methods">Optimisation Methods</h3>
 <p>Let’s quickly review the standard optimisation problem and the methods to solve it</p>
@@ -108,13 +108,38 @@ Note that this update rule is discretisation of the ode
 $$\dot{w} = -\nabla f(w)$$</p>
 
 <p><script type="math/tex">\nabla f(w) = \sum_{x_{i} \in dataset} \nabla_{w}L(\phi(w, x_{i}))</script> 
-It’s usually difficult to evaluate this term everytime (over all dataset). So we approximate the term <script type="math/tex">\nabla f(w) \approx  \nabla_{w}L(\phi(w, x_{i}))</script></p>
+It’s usually difficult to evaluate this term everytime (over all dataset).</p>
 
+<p><br />
+So we approximate the term as<br />
+$$\nabla f(w) \approx \sum_{x_{i} \in batch} \nabla_{w}L(\phi(w, x_{i}))$$ 
+and this gives us Stochastic Gradient Descent (actually mini-batch). Which is a noisy discretisation of above ode</p>
+
+<script type="math/tex; mode=display">\dot{w} = -\nabla f(w) + \xi</script>
+
+<p>The convergence is noisy but it may or may not get stuck at local minima and saddle points</p>
 <h4 id="newtons-method">Newtons Method</h4>
+<p>This is actually a root finding method for a function f<br />
+Since, minima is the root of <script type="math/tex">\nabla f(w)</script> we can use this update rule to findout the
+$$w_{t+1} = w_{t} - \frac{1}{\nabla^{2}f(w_{t})}\nabla f(w_{t})$$</p>
 
-<h3 id="problem-formulation">Problem Formulation</h3>
+<p>We can think of this as newton’s method provides a value for the step size parameter <script type="math/tex">\alpha_{t}</script>
+$$\alpha_{t} = \frac{1}{\nabla^{2}f(w_{t})}$$</p>
 
-<p>[WIP]</p>
+<p>For vector <script type="math/tex">\bar{w_{t}}</script> we have,
+$$\bar{w_{t+1}} = \bar{w_{t}} - H^{-1}(w_{t})J(w_{t})$$</p>
+
+<p>H, J are hessian and jacobian (of <script type="math/tex">f(w_{t})</script>) respectively</p>
+<h3 id="fmad-and-rmad">FMAD and RMAD</h3>
+<p><strong>[WIP]</strong></p>
+
+<h3 id="to-do">To-Do</h3>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />FMAD</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />RMAD</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Algorithm</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />References</li>
+</ul>
 
   </div>
 </div>
