@@ -31,7 +31,7 @@ These are unorganised. These mostly include the papers I read for some of my pro
 - [On the Role of Tracking in Stationary environments]()
 - [Nonlinear Gossip]()
 - [Deep Learning generalises because the parameter - function map is biased towards simple functions]()
-- [Small Steps and Giant Leaps: Minimal Newton Solvers for Deep Learning]()
+- [Small Steps and Giant Leaps: Minimal Newton Solvers for Deep Learning]({{ BASE_PATH }}/posts/newton_solvers.html)
 - [Audio-Visual Scene Analysis with Self-Supervised Multisensory Features]()
 - [Deep Bayesian Active Learning for Multiple Correct Outputs]()
 - [Bayesian representation learning with oracle constraints]()

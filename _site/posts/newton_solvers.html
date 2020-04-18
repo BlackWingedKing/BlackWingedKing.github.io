@@ -1,0 +1,132 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Curve Ball and Newton Solvers</title>
+    <meta name="description" content="paper summary">
+    
+    <meta name="author" content="Ritesh Goru">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/twitter/css/riteshgoru.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Mathjax Support -->
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    <!-- Le fav and touch icons - this is where you can add a little icon that will show up in the address bar next to the addrss adn in search history next to website name
+    <link rel="SHORTCUT ICON" href="/assets/me.ico"/>
+    -->
+    <!-- atom & rss feed -->
+    <link href="nil" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="nil" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+    <!--Add function that displays last modified date: -->
+    <script type="text/javascript">
+      onload = function(){
+          document.getElementById("lastModified").innerHTML = "Website last updated on " + document.lastModified.split(" ")[0];
+      }
+      </script>
+  
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">Ritesh Goru</a>
+          <ul class="nav">
+              <li><a href="/pages/about.html">about</a></li>
+              <li><a href="/pages/publications.html">publications</a></li>
+              <li><a href="/pages/research.html">research</a></li>
+              <li><a href="/pages/notes.html">notes/blog</a></li>  
+              <li><a href="/pages/projects.html">projects</a></li>
+              <li><a href="/assets/CV.pdf">cv</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow">
+
+      <div class="content">
+        
+
+<div class="page-header">
+  <h2>Curve Ball and Newton Solvers </h2>
+</div>
+
+<div class="row-fluid">
+  <div class="span12">
+    <p><strong>NOTE:</strong>  This post assumes you are acquainted with first and second order optimisation techniques</p>
+
+<p><a href="https://arxiv.org/abs/1805.08095">link to the paper</a></p>
+<h3 id="motivation">Motivation</h3>
+<p><img src="/assets/minima-meme.jpg" alt="local-minima-meme" style="float: left;padding-right:10px " />
+Optimisation is probably the most important part for Deep learning. The main problems are <a href="https://en.wikipedia.org/wiki/Curse_of_dimensionality">the curse of dimensionality</a> and irregular cost function topologies. Everything would have been so perfect if either one of these wouldn’t exist. SGD has become so popular, with the hope that, the stochastic noise added helps escaping the local optima and saddle points. But still this does’t work everytime.</p>
+
+<!-- and there are a lot of variants of optimisers.   -->
+<p>Second order optimisers such as L-BFGS, CG and other quasi newton methods work very well in lower dimensions but they fail in the higher dimension because of the memory and computational growth is exponential w.r.t increase in dimension.</p>
+
+<p>This paper proposes a new faster method - curve ball addressing the issues of 2nd order optimisers</p>
+
+<h3 id="optimisation-methods">Optimisation Methods</h3>
+<p>Let’s quickly review the standard optimisation problem and the methods to solve it</p>
+<h4 id="optimisation-problem">Optimisation Problem</h4>
+<p>A usual machine learning problem involves,<br />
+Finding an optimum <script type="math/tex">w^{*}</script> which minimises(or max) the loss function <script type="math/tex">L(\phi(w))</script>, Objective may also be constrained.
+But we could add a penalty function and make it unconstrained, So let’s focus only on this<br />
+$$w^{*} = \underset{w}{\operatorname{argmin} L(\phi(w))} = \underset{w}{\operatorname{argmin} f(w)}$$</p>
+
+<p>And <script type="math/tex">f(w)</script> is defined as<br />
+$$f(w) = \sum_{i}L(\phi(w,x_{i}))$$</p>
+
+<p>Here, <script type="math/tex">x_{i}</script> is the input data point.<br />
+So, in short we need to find the global minima of the function <script type="math/tex">f</script></p>
+<h4 id="gradient-descent">Gradient Descent</h4>
+<p><img src="/assets/GD.jpg" alt="GD-image" style="float: left;padding-right:10px " />
+I think this image best explains the Gradient Descent<br />
+The idea is to take the step in the direction of the gradient<br />
+The update rule for the iterate would be
+$$w_{t+1} = w_{t} - \alpha_{t}\nabla f(w_{t})$$</p>
+
+<p><script type="math/tex">\alpha_{t}</script> is the learning rate or the step size at time t.<br />
+Note that this update rule is discretisation of the ode
+$$\dot{w} = -\nabla f(w)$$</p>
+
+<p><script type="math/tex">\nabla f(w) = \sum_{x_{i} \in dataset} \nabla_{w}L(\phi(w, x_{i}))</script> 
+It’s usually difficult to evaluate this term everytime (over all dataset). So we approximate the term <script type="math/tex">\nabla f(w) \approx  \nabla_{w}L(\phi(w, x_{i}))</script></p>
+
+<h4 id="newtons-method">Newtons Method</h4>
+
+<h3 id="problem-formulation">Problem Formulation</h3>
+
+<p>[WIP]</p>
+
+  </div>
+</div>
+
+
+      </div>
+
+      <hr>
+      <span id="lastModified"></span>
+    </div>
+
+    
+  </body>
+</html>
+
