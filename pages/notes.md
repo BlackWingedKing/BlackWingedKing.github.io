@@ -20,22 +20,28 @@ Inspired from [lil'log](https://lilianweng.github.io/lil-log/) and [feynman's te
 
 ### <a name="Paper-summaries"></a>Paper-summaries
 These are unorganised. These mostly include the papers I read for some of my projects. I will try to organise them in a few days
-- [DAG with NOTEARS]({{ BASE_PATH }}/posts/dag_no_tears.html)
-- [Small Steps and Giant Leaps: Minimal Newton Solvers for Deep Learning]({{ BASE_PATH }}/posts/newton_solvers.html)
-- [On the Role of Tracking in Stationary environments]({{ BASE_PATH }}/posts/tracking_stationary_envt.html)
-- [Continuous time bayesian networks]({{ BASE_PATH }}/posts/ctbn.html)
-- [Underdamped Langevin MCMC: A non-asymptotic analysis]()
-- [Why random reshuffling beats stochastic gradient descent]()
-- [SGD Without Replacement]()
-- [Global Convergence of SGHMC for Non-Convex Stochastic Optimisation]()
-- [Generalised Solutions for Sylvester Equations]()
-- [Iterative Methods for solving Sylvester Equations]()
-- [Nonlinear Gossip]()
-- [Deep Learning generalises because the parameter - function map is biased towards simple functions]()
-- [Audio-Visual Scene Analysis with Self-Supervised Multisensory Features]()
-- [Deep Bayesian Active Learning for Multiple Correct Outputs]()
-- [Bayesian representation learning with oracle constraints]()
-- 
+* ##### Graphical Models
+  - [DAG with NOTEARS]({{ BASE_PATH }}/posts/dag_no_tears.html)
+  - [Continuous time bayesian networks]({{ BASE_PATH }}/posts/ctbn.html)
+* ##### Optimisation
+  - [Small Steps and Giant Leaps: Minimal Newton Solvers for Deep Learning]({{ BASE_PATH }}/posts/newton_solvers.html)
+  - [Underdamped Langevin MCMC: A non-asymptotic analysis]()
+  - [Why random reshuffling beats stochastic gradient descent]()
+  - [SGD Without Replacement]()
+  - [Global Convergence of SGHMC for Non-Convex Stochastic Optimisation]()
+  - [Nonlinear Gossip]()
+* ##### Active Learning
+  - [Deep Bayesian Active Learning for Multiple Correct Outputs]()
+  - [Bayesian representation learning with oracle constraints]()
+* ##### Generalisation
+  - [Deep Learning generalises because the parameter - function map is biased towards simple functions]()
+* ##### Algebra
+  - [Generalised Solutions for Sylvester Equations]()
+  - [Iterative Methods for solving Sylvester Equations]()
+* ##### Reinforcement Learning
+  - [On the Role of Tracking in Stationary environments]({{ BASE_PATH }}/posts/tracking_stationary_envt.html)
+* ##### ASR
+  - [Audio-Visual Scene Analysis with Self-Supervised Multisensory Features]()
 
 ### <a name="My-Notes"></a>My-Notes
 These are some write-up's by me, Again these will be organised in somedays
