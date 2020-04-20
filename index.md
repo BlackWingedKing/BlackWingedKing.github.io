@@ -29,12 +29,12 @@ I maintain notes for almost everything I learn. Have a look at [notes/blog]({{ B
         </div>
 
         <div class="span2">
-        <!-- <a href="../assets/pic.png">
-            <img src="../assets/pic.jpg"
-                  title="Ritesh Goru" alt="Ritesh Goru" width="220" height="350" /></a> -->
         <a href="../assets/pic.png">
             <img src="../assets/pic.jpg"
-                  title="Ritesh Goru" alt="Ritesh Goru" /></a>
+                  title="Ritesh Goru" alt="Ritesh Goru" width="220" height="350" /></a>
+        <!-- <a href="../assets/pic.png">
+            <img src="../assets/pic.jpg"
+                  title="Ritesh Goru" alt="Ritesh Goru" /></a> -->
 
         </div>
     </div>
