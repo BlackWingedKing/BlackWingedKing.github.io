@@ -5,7 +5,7 @@ description: Ritesh Goru is an fourth year undergrad at IIT Bombay
 keywords: Ritesh, Goru
 ---
 <br>
-I am a fourth-year undergraduate in Electrical Engineering at [IIT Bombay](http://iitb.ac.in/). I'm interested in Stochastic Approximation and MCMC techniques for Optimisation. I'm currently doing my undergrad project on distributed SGD with straggler mitigation with [Prof. Vivek Bokar](https://en.wikipedia.org/wiki/Vivek_Borkar) and [Prof. Nikhil Karamchandani](https://sites.google.com/site/nikhilkaram/). 
+I am a fourth-year undergraduate in Electrical Engineering at [IIT Bombay](http://iitb.ac.in/). I'm interested in Stochastic Approximation, MCMC techniques for Optimisation and Baysesian Learning Theory. I'm currently doing my undergrad project on distributed SGD with straggler mitigation with [Prof. Vivek Bokar](https://en.wikipedia.org/wiki/Vivek_Borkar) and [Prof. Nikhil Karamchandani](https://sites.google.com/site/nikhilkaram/). 
 
 I'm also working with [Prof. Subhasis Chaudhari](https://en.wikipedia.org/wiki/Subhasis_Chaudhuri) on Active learning for Distance Metric Learning.
 

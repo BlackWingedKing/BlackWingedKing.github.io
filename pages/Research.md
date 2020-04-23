@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research
-description: Ritesh Goru's research
+description: Ritesh Goru's Research
 ---
 
 *Research statement to be added here*

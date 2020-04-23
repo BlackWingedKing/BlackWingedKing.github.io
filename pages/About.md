@@ -1,7 +1,7 @@
 ---
 layout: page
-title: about
-description: about Ritesh Goru
+title: About
+description: About Ritesh Goru
 ---
 
 I am a fourth-year undergraduate in Electrical Engineering at [IIT Bombay](http://iitb.ac.in/). I'm currently doing my undergrad project on distributed SGD with straggler mitigation with [Prof. Vivek Bokar](https://en.wikipedia.org/wiki/Vivek_Borkar) and [Prof. Nikhil Karamchandani](https://sites.google.com/site/nikhilkaram/). I'm also working with [Prof. Subhasis Chaudhari](https://en.wikipedia.org/wiki/Subhasis_Chaudhuri) on Active learning for Distance Metric Learning.
