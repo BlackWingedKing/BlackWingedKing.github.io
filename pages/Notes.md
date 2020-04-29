@@ -70,7 +70,7 @@ These are some write-up's by me, Again these will be organised in somedays
 - [Learning Piano]({{ BASE_PATH }}/posts/keyboard.html)
 - [Mentalism and Mind Reading]({{ BASE_PATH }}/posts/mentalism.html)
 - [A mind of a Mnemonist - book summary]({{ BASE_PATH }}/posts/mnemonist.html)
-- 
+- [Codingame - pod control]({{ BASE_PATH }}/posts/codingame.html)
 
 ---
 ### <a name="Resources"></a>Resources
