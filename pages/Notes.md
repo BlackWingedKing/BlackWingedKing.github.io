@@ -72,6 +72,7 @@ These are some write-up's by me, Again these will be organised in somedays
 - [A mind of a Mnemonist - book summary]({{ BASE_PATH }}/posts/mnemonist.html)
 - [Codingame - pod control]({{ BASE_PATH }}/posts/codingame.html)
 - [What everybody is saying - book summary]({{ BASE_PATH }}/posts/what_everybody_is_saying.html)
+- [Learning Japanese]({{ BASE_PATH }}/posts/learning_japanese.html)
 - 
 
 ---
