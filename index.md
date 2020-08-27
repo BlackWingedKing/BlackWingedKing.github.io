@@ -25,6 +25,7 @@ I maintain notes for almost everything I learn. Have a look at [notes/blog]({{ B
 <table>
 <col width="80px">
 <col width="650px">
+<tr><td><b>July 2020:</b></td><td>I have started working as an Research Assistant under Prof. Manoj Gopalakrishnan (IITB)</td></tr>
 <tr><td><b>Apr 2020:</b></td><td>Our paper <b>Batch Decorrelation for Active Metric Learning</b> got selected to IJCAI-PRICAI 2020</td></tr>
 <tr><td><b>Mar 2020:</b></td><td>I solved the inequality and won a bounty set up by Prof. Manoj Gopalakrishan - <a href="{{ BASE_PATH }}/assets/proof_modified.pdf">proof</a></td></tr>
 <tr><td><b>Mar 2020:</b></td><td>I Bought <a href="https://www.casio-intl.com/asia/en/emi/products/cts300/">this</a> 61-key keyboard and started learning - I'm logging my progress <a href="{{ BASE_PATH }}/posts/keyboard.html">here</a></td></tr>
