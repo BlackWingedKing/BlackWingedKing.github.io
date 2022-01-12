@@ -48,14 +48,15 @@ $$\gamma$$ is
 - 0 for chronic procrastinators. So they just enjoy the current moment lazing off and reward is the pleasure they take from lazing off
 - Higher for workaholics or non-procrastinators
 
-Let me explain this with an example.
+<!-- Let me explain this with an example.
 
 ### An Example
 Let's say a person A has a deadline for a project, a week from now.  
-He can  
----
+He can   -->
+So I think the main Idea is to understand, what is it that we could do to increase our $$\gamma$$ ?
+<!-- ---
 #### To-do 
 - [ ] complete the example
 - [ ] Remedies for procrastination
 - [ ] Need for Scheduling
-- [ ] How I schedule
+- [ ] How I schedule -->
