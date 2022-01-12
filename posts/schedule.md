@@ -54,9 +54,11 @@ $$\gamma$$ is
 Let's say a person A has a deadline for a project, a week from now.  
 He can   -->
 So I think the main Idea is to understand, what is it that we could do to increase our $$\gamma$$ ?
-<!-- ---
+
+<!--
 #### To-do 
 - [ ] complete the example
 - [ ] Remedies for procrastination
 - [ ] Need for Scheduling
-- [ ] How I schedule -->
+- [ ] How I schedule 
+-->
