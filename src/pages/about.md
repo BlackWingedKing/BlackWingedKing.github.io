@@ -3,35 +3,36 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+I am Ritesh Goru, currently working at DevRev. I completed my undergraduate degree in Electrical Engineering at [IIT Bombay](http://iitb.ac.in/). I'm interested in Stochastic Approximation, MCMC techniques for Optimisation and Bayesian Learning Theory.
 
-![Astro Paper](public/astropaper-og.jpg)
+![Ritesh Goru](/assets/pic.jpg)
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+## Research Experience
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+I did my undergrad project on distributed SGD with straggler mitigation with [Prof. Vivek Borkar](https://en.wikipedia.org/wiki/Vivek_Borkar) and [Prof. Nikhil Karamchandani](https://sites.google.com/site/nikhilkaram/). I also worked with [Prof. Subhasis Chaudhuri](https://en.wikipedia.org/wiki/Subhasis_Chaudhuri) on Active learning for Distance Metric Learning.
 
-## Features
+I was a visiting research student at Purdue University under Prof. [Juan Wachs](https://web.ics.purdue.edu/~jpwachs/) in [ISAT lab](https://engineering.purdue.edu/isat/), where I worked on Imitation Learning methods for Robotic Surgery.
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+## Publications
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+### Batch Decorrelation for Active Metric Learning
 
-and so much more.
+We present an active learning strategy for training parametric models of distance metrics, given triplet-based similarity assessments: object $x_{i}$ is more similar to object $x_{j}$ than to $x_{k}$. In contrast to prior work on class-based learning, where the fundamental goal is classification and any implicit or explicit metric is binary, we focus on *perceptual* metrics that express the *degree* of (dis)similarity between objects.
 
-## Show your support
+**Accepted to IJCAI-PRICAI 2020.** [Read the paper](https://arxiv.org/abs/2005.10008)
 
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
+## Technical Projects
 
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
+I spent 3 years working at [Innovation Cell](http://www.umiciitb.com/) IIT Bombay, where I worked on various technical projects. I was the vision lead for SeDriCa Team. I was one of the 7 members of the winning team of ASME-SDC world finals held at Tampa Florida.
 
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
+## Notes & Blog
 
-Kyay zuu! 🙏🏼
+Inspired from [lil'log](https://lilianweng.github.io/lil-log/) and [Feynman's technique](https://mattyford.com/blog/2014/1/23/the-feynman-technique-model), I log things I learn here.
+
+Check out my [blog posts](/posts) for paper summaries, technical notes, and non-technical writings.
+
+## Contact
+
+- Email: riteshgoru@iitb.ac.in
+- GitHub: [BlackWingedKing](https://github.com/BlackWingedKing)
+- [CV](/assets/CV.pdf)
