@@ -3,32 +3,57 @@
 @layer base {
   /* ===== Override default Tailwind Typography styles ===== */
   .app-prose {
-    @apply prose;
+    @apply prose prose-lg max-w-none;
 
-    h1,
-    h2,
-    h3,
-    h4,
-    th {
-      @apply mb-3 text-foreground;
+    h1 {
+      @apply mb-4 mt-8 text-3xl text-foreground;
+      font-family: var(--font-serif);
+      font-weight: 600;
+    }
+
+    h2 {
+      @apply mb-3 mt-8 text-2xl text-foreground;
+      font-family: var(--font-serif);
+      font-weight: 600;
     }
 
     h3 {
-      @apply italic;
+      @apply mb-3 mt-6 text-xl text-foreground;
+      font-family: var(--font-serif);
+      font-weight: 600;
+      font-style: italic;
     }
 
-    p,
-    strong,
+    h4,
+    th {
+      @apply mb-3 text-lg text-foreground;
+      font-weight: 500;
+    }
+
+    p {
+      @apply text-foreground leading-relaxed mb-5;
+    }
+
+    strong {
+      @apply text-foreground font-semibold;
+    }
+
     ol,
-    ul,
-    figcaption,
+    ul {
+      @apply text-foreground;
+    }
+
+    figcaption {
+      @apply text-foreground-secondary text-sm;
+    }
+
     table,
     code {
       @apply text-foreground;
     }
 
     a {
-      @apply break-words text-foreground decoration-dashed underline-offset-4 hover:text-accent focus-visible:no-underline;
+      @apply text-foreground underline decoration-foreground/30 underline-offset-2 hover:decoration-foreground transition-colors;
     }
 
     ul {
@@ -36,29 +61,29 @@
     }
 
     li {
-      @apply marker:text-accent;
+      @apply marker:text-foreground/50;
     }
 
     hr {
-      @apply border-border;
+      @apply border-border my-8;
     }
 
     img {
-      @apply mx-auto border border-border;
+      @apply mx-auto rounded-sm;
     }
 
     figcaption {
-      @apply opacity-75;
+      @apply opacity-75 text-center mt-2;
     }
 
     table {
       th,
       td {
-        @apply border border-border p-2;
+        @apply border border-border p-3;
       }
 
       th {
-        @apply py-1.5;
+        @apply py-2 bg-muted;
       }
 
       code {
@@ -67,7 +92,7 @@
     }
 
     code {
-      @apply rounded bg-muted/75 p-1 break-words text-foreground before:content-none after:content-none;
+      @apply rounded bg-muted px-1.5 py-0.5 text-[0.9em] text-foreground before:content-none after:content-none;
     }
 
     .astro-code code {
@@ -75,7 +100,7 @@
     }
 
     blockquote {
-      @apply border-s-accent/80 break-words opacity-80;
+      @apply border-l-4 border-foreground/20 pl-4 italic text-foreground/80;
     }
 
     details {
@@ -93,7 +118,7 @@
 
   /* ===== Code Blocks & Syntax Highlighting ===== */
   .astro-code {
-    @apply flex border bg-(--shiki-light-bg) text-(--shiki-light) outline-border [&_span]:text-(--shiki-light);
+    @apply flex border border-border rounded-md bg-(--shiki-light-bg) text-(--shiki-light) outline-border [&_span]:text-(--shiki-light);
   }
 
   html[data-theme="dark"] .astro-code {

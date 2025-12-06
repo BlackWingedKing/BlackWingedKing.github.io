@@ -14,23 +14,34 @@ const { title, description, pubDatetime, modDatetime, timezone } = data;
 
 const headerProps = {
   style: { viewTransitionName: slugifyStr(title) },
-  class: "text-lg font-medium decoration-dashed hover:underline",
+  class: "card-title text-xl hover:underline decoration-foreground/30 underline-offset-2",
 };
 ---
 
-<li class="my-6">
-  <a
-    href={getPath(id, filePath)}
-    class="inline-block text-lg font-medium text-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
-  >
-    {
-      variant === "h2" ? (
-        <h2 {...headerProps}>{title}</h2>
-      ) : (
-        <h3 {...headerProps}>{title}</h3>
-      )
-    }
-  </a>
-  <Datetime {pubDatetime} {modDatetime} {timezone} />
-  <p>{description}</p>
+<li class="my-8 flex flex-col sm:flex-row sm:gap-8">
+  <div class="text-foreground-secondary text-sm whitespace-nowrap mb-1 sm:mb-0 sm:w-20 sm:pt-1">
+    <Datetime {pubDatetime} {modDatetime} {timezone} dateOnly />
+  </div>
+  <div class="flex-1">
+    <a
+      href={getPath(id, filePath)}
+      class="inline-block text-foreground"
+    >
+      {
+        variant === "h2" ? (
+          <h2 {...headerProps}>{title}</h2>
+        ) : (
+          <h3 {...headerProps}>{title}</h3>
+        )
+      }
+    </a>
+    <p class="mt-1 text-foreground-secondary text-base leading-relaxed">{description}</p>
+  </div>
 </li>
+
+<style>
+  .card-title {
+    font-family: var(--font-serif);
+    font-weight: 600;
+  }
+</style>

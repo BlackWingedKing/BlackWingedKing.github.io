@@ -14,6 +14,7 @@ export interface Props {
   timezone: string | undefined;
   pubDatetime: string | Date;
   modDatetime: string | Date | undefined | null;
+  dateOnly?: boolean;
 }
 
 const {
@@ -22,6 +23,7 @@ const {
   size = "sm",
   class: className = "",
   timezone: postTimezone,
+  dateOnly = false,
 } = Astro.props;
 
 /* ========== Formatted Datetime ========== */
@@ -31,25 +33,35 @@ const datetime = dayjs(isModified ? modDatetime : pubDatetime).tz(
   postTimezone || SITE.timezone
 );
 
-const date = datetime.format("D MMM, YYYY"); // e.g., '22 Mar, 2025'
+const date = datetime.format("MMM D, YYYY"); // e.g., 'Mar 22, 2025'
+const shortDate = datetime.format("MMM D"); // e.g., 'Mar 22'
 ---
 
-<div class:list={["flex items-center gap-x-2 opacity-80", className]}>
-  <IconCalendar
-    class:list={[
-      "inline-block size-6 min-w-[1.375rem]",
-      { "scale-90": size === "sm" },
-    ]}
-  />
-  {
-    isModified && (
-      <span class:list={["text-sm", { "sm:text-base": size === "lg" }]}>
-        Updated:
-      </span>
-    )
-  }
+{dateOnly ? (
   <time
-    class:list={["text-sm", { "sm:text-base": size === "lg" }]}
-    datetime={datetime.toISOString()}>{date}</time
+    class:list={["text-foreground-secondary", className]}
+    datetime={datetime.toISOString()}
   >
-</div>
+    {shortDate}
+  </time>
+) : (
+  <div class:list={["flex items-center gap-x-2 opacity-80", className]}>
+    <IconCalendar
+      class:list={[
+        "inline-block size-6 min-w-[1.375rem]",
+        { "scale-90": size === "sm" },
+      ]}
+    />
+    {
+      isModified && (
+        <span class:list={["text-sm", { "sm:text-base": size === "lg" }]}>
+          Updated:
+        </span>
+      )
+    }
+    <time
+      class:list={["text-sm", { "sm:text-base": size === "lg" }]}
+      datetime={datetime.toISOString()}>{date}</time
+    >
+  </div>
+)}
