@@ -4,7 +4,7 @@ pubDatetime: 2020-04-01T10:00:00Z
 title: Curve Ball and Newton Solvers
 slug: newton-solvers
 featured: true
-draft: false
+draft: true
 tags:
   - paper-summary
   - optimization

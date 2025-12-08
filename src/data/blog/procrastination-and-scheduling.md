@@ -4,7 +4,7 @@ pubDatetime: 2020-04-05T10:00:00Z
 title: Procrastination and Scheduling
 slug: procrastination-and-scheduling
 featured: true
-draft: false
+draft: true
 tags:
   - non-technical
   - productivity
