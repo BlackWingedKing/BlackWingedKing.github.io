@@ -4,7 +4,7 @@ pubDatetime: 2020-04-10T10:00:00Z
 title: Role of Tracking in Stationary Environments
 slug: tracking-stationary-envt
 featured: true
-draft: true
+draft: false
 tags:
   - paper-summary
   - reinforcement-learning
@@ -24,11 +24,17 @@ All the learning Algorithms have the same objective - to reach the optima (usual
 
 ## Setup
 
-They start of assuming that the data comes from a system with evolving states and hence, the usual IID assumption doesn't hold. **Temporal Coherence** here refers to being similar in nearby time states. The first example which was demonstrated is Black and White world. It basically is a system with circular states $(S0,S1...S19)$ and a value 0 or 1 assigned (not exactly random (eg. $S0-S10 \rightarrow 0$ and $S11-S19 \rightarrow 1$)) to each state. The agent either observes the value or moves left or right (eg. $p(observe) = 0.5$, $p(left) = 0.25$, $p(right) = 0.25$). So, it's a random walk with random observation.
+They start of assuming that the data comes from a system with evolving states and hence, the usual IID assumption doesn't hold. **Temporal Coherence** here refers to being similar in nearby time states. The first example which was demonstrated is Black and White world. It basically is a system with circular states $(S0,S1...S19)$ and a value 0 or 1 assigned (not exactly random (eg. $S0-S10 \rightarrow 0$ and $S11-S19 \rightarrow 1$)) to each state.
+
+The agent either observes the value or moves left or right (eg. $p(observe) = 0.5$, $p(left) = 0.25$, $p(right) = 0.25$). So, it's a random walk with random observation.
 
 ## Objective
 
-The objective is to predict the observed value ($z_{t}$) using a single scalar parameter and all the state values $x_{t} = 1$. The usual logistic regression loss over this yields an optima for prediction $y_t = 0.5$ (Due to the walk and observation distribution and circular states over a enough observations). They show that when tracking is done ie the update $w_{t+1} = w_{t} + \alpha\delta_{t}x_{t}; \delta_{t}=z_{t}-y_{t}$ while execution (Not to be confused with usual training update rule), for a certain values of $\alpha$ they get lower loss compared to the optima given by usual training method. They claim that the choice of $\alpha$ depends on the degree of coherence in the envt (They show by changing the p(observe)), which sounds plausible.
+The objective is to predict the observed value ($z_{t}$) using a single scalar parameter and all the state values $x_{t} = 1$. The usual logistic regression loss over this yields an optima for prediction $y_t = 0.5$ (Due to the walk and observation distribution and circular states over a enough observations). They show that when tracking is done i.e the update 
+
+$$w_{t+1} = w_{t} + \alpha\delta_{t}x_{t}; \delta_{t}=z_{t}-y_{t}$$
+
+while execution (Not to be confused with usual training update rule), for a certain values of $\alpha$ they get lower loss compared to the optima given by usual training method. They claim that the choice of $\alpha$ depends on the degree of coherence in the envt (They show by changing the p(observe)), which sounds plausible.
 
 ## Selfplay Example
 

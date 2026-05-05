@@ -33,6 +33,6 @@ Check out my [blog posts](/posts) for paper summaries, technical notes, and non-
 
 ## Contact
 
-- Email: riteshgoru@iitb.ac.in
+- Email: ritesh.goru@gmail.com
 - GitHub: [BlackWingedKing](https://github.com/BlackWingedKing)
 - [CV](/assets/CV.pdf)
