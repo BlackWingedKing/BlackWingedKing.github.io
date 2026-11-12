@@ -1,0 +1,26 @@
+{
+  "fps": 30,
+  "size": [
+    1440,
+    960
+  ],
+  "view_bounds": [
+    125,
+    125,
+    376,
+    376
+  ],
+  "playback_speed": 1,
+  "duration_seconds": 8.0,
+  "excerpt_compute_seconds": [
+    0,
+    8.0
+  ],
+  "loop": true,
+  "demo_seed": 42,
+  "finish_seconds": {
+    "random_walk": 38.117968,
+    "square_exit": 1.26397
+  },
+  "median_speedup": 34.74322710409788
+}

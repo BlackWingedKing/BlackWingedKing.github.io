@@ -1,0 +1,225 @@
+dla-intro,
+dla-probabilities,
+dla-square {
+  display: block;
+  margin: 2rem 0;
+  padding: 1.25rem;
+  border: 1px solid #dbe2e8;
+  border-radius: 10px;
+  background: #f8fafb;
+  color: #182838;
+  font:
+    15px/1.5 system-ui,
+    sans-serif;
+}
+.dla-figure-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+}
+.dla-figure-grid svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.dla-figure-grid svg text {
+  font-family: system-ui, sans-serif;
+}
+.dla-figure-grid h3 {
+  color: #182838;
+  font:
+    600 20px/1.3 system-ui,
+    sans-serif;
+  margin: 0 0 1rem;
+}
+.dla-figure-grid p,
+.dla-figure-grid output {
+  color: #435464;
+  margin: 0.6rem 0;
+  font:
+    15px/1.5 system-ui,
+    sans-serif;
+}
+.dla-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.dla-controls button {
+  border: 1px solid #b8c5d0;
+  border-radius: 5px;
+  padding: 0.45rem 0.75rem;
+  background: white;
+  color: #182838;
+  font:
+    600 14px/1.4 system-ui,
+    sans-serif;
+  cursor: pointer;
+}
+.dla-controls button:first-child {
+  background: #146f7d;
+  border-color: #146f7d;
+  color: white;
+}
+.dla-controls button:focus-visible,
+.dla-figure-grid input:focus-visible {
+  outline: 3px solid #7857c6;
+  outline-offset: 3px;
+}
+.dla-figure-grid input {
+  width: 100%;
+  accent-color: #146f7d;
+}
+.dla-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  font-size: 12px;
+  color: #526476;
+  margin-top: 0.5rem;
+}
+.dla-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  margin-right: 4px;
+}
+.dla-status {
+  display: block;
+  min-height: 3rem;
+}
+.dla-muted {
+  color: #617384;
+  font-size: 12px;
+}
+.dla-methods {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.dla-method-card {
+  border: 1px solid #dbe2e8;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.dla-method-card svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.dla-method-card p {
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+.dla-math {
+  border-left: 3px solid #146f7d;
+  padding: 0.2rem 1rem;
+  margin: 1.5rem 0;
+}
+.dla-note {
+  font-size: 0.95rem;
+  color: var(--color-foreground-secondary, inherit);
+}
+.dla-details {
+  display: block !important;
+  width: 100%;
+  cursor: auto !important;
+  user-select: text !important;
+  margin: 1.5rem 0;
+  border-block: 1px solid #dbe2e8;
+  padding: 1rem 0;
+}
+.dla-details summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.dla-details[open] p {
+  display: block !important;
+}
+.dla-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  background: #0b1020;
+}
+@media (max-width: 580px) {
+  .dla-figure-grid,
+  .dla-methods {
+    grid-template-columns: 1fr;
+  }
+  .dla-figure-grid {
+    gap: 1rem;
+  }
+  .dla-figure-grid svg {
+    max-width: 310px;
+    margin: 0 auto;
+  }
+  dla-intro,
+  dla-probabilities,
+  dla-square {
+    padding: 1rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dla-figure-grid * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.dla-bars {
+  height: 140px;
+}
+.dla-bars svg {
+  width: 100%;
+  height: 140px;
+  max-width: none;
+}
+.dla-bars svg text {
+  font-size: 10px;
+  fill: #435464;
+}
+dla-probabilities .dla-status {
+  height: 4.5rem;
+  overflow-y: auto;
+}
+.dla-controls button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.dla-intro-figure {
+  margin: 0;
+  text-align: center;
+}
+.dla-intro-figure .dla-picture {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.dla-intro-figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.dla-intro-figure h3 {
+  font:
+    600 16px/1.4 system-ui,
+    sans-serif;
+  margin: 0.75rem 0 0;
+}
+.dla-intro-figure .dla-key {
+  justify-content: center;
+}
+.dla-intro-figure .dla-muted {
+  margin-bottom: 0;
+}
+.dla-intro-figure .dla-picture:focus-visible {
+  outline: 2px solid #146f7d;
+  outline-offset: 3px;
+}

@@ -1,0 +1,22 @@
+{
+  "playback_speed": 1,
+  "fps": 30,
+  "demo_seed": 42,
+  "full_grid": [
+    101,
+    101
+  ],
+  "finish_seconds": {
+    "random_walk": 0.1053,
+    "matrix": 13.919834,
+    "rectangle": 23.344975,
+    "matrix_gpu": 26.275738,
+    "square_exit": 0.017148
+  },
+  "duration_seconds": 8.0,
+  "excerpt_compute_seconds": [
+    0,
+    8.0
+  ],
+  "loop": true
+}

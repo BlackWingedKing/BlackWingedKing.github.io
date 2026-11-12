@@ -1,0 +1,333 @@
+{
+  "date": "2026-11-06",
+  "grid": [
+    101,
+    101
+  ],
+  "particles": 200,
+  "stickiness": 1.0,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "demo_seed": 42,
+  "methods": [
+    "random_walk",
+    "matrix",
+    "rectangle",
+    "matrix_gpu",
+    "square_exit"
+  ],
+  "source_revision": "09a35cf790ef0bd14d719e9cb411e475a1b7f607",
+  "source_sha256": {
+    "grid.mojo": "410d7e1f751daca7eb583724ca26ed7d3cae3b31e819cee7e559cfc1c374f933",
+    "research/method_benchmark.mojo": "c5f8f7a9bc21948a93f56ef20c8c5c546b9ec75e19f37447f88b9e6d97fa8852",
+    "algorithms/__init__.mojo": "6778da920a55a9e0668a3402ef2741da07854e29615d570ab3f00650ced24753",
+    "algorithms/gpu_solver.mojo": "bb3d51509d2de593942b8ddc7f3d8907a22247578f184e8e62f8f88177cbd30e",
+    "algorithms/linear_solver.mojo": "3684c8dead8ae7a1e4907580a39168c18354890bbf7ce87726dbbcfe2db1f288",
+    "algorithms/matrix.mojo": "46cdba39d4918740223d3c6f4d73d5803aa2e04af95c1e9659eded1ed641aa77",
+    "algorithms/matrix_gpu.mojo": "3c890e33c825f39cb814f02d35800537fbf08e097cabe0abb3acaa31f7fd3b51",
+    "algorithms/random_walk.mojo": "484eb0fa87a51b0c0b20e814f1d3f81b456d3dee22041bc71c369803648ff1ff",
+    "algorithms/rectangle.mojo": "81108c8fb9051ef85af1b31d66432d660215f57c0632115185673e8d423e8014",
+    "algorithms/square_exit.mojo": "318265830bfce65cd42a2d11b6a23f27d0b1cf69dd1da8b5135bb6be510f1695"
+  },
+  "hardware": "Apple M3 Pro, 36 GB",
+  "os": "27.2",
+  "compiler": "Mojo 1.2.0 (2016d0cd)",
+  "build": ".venv/bin/mojo build -O3 -I . research/method_benchmark.mojo -o /tmp/dla-method-benchmark",
+  "timing": "Sum of public spawn-and-stick call durations. Includes rectangle/square caches, GPU context/buffers/transfers, runtime kernel setup and CPU refinement. Excludes ahead-of-time compilation, initial grid construction, event storage/export and rendering. Each run is a fresh process/grid; no in-process warmup. loop_ns includes per-particle timer/capture overhead.",
+  "protocol": "101 x 101 / 200 particles chosen after a 20-particle pilot at seed 2026; then fixed. Five seeds, cyclic method order. Recorded separately without concurrent simulation or rendering. Seed 42 selected for 1x replay before main results.",
+  "runs": [
+    {
+      "method": "random_walk",
+      "seed": 42,
+      "compute_ns": 105300000,
+      "loop_ns": 105302000,
+      "grid_init_ns": 5000,
+      "first_50_ns": 36244000,
+      "checksum": 1048702,
+      "process_seconds": 0.12200795900571393
+    },
+    {
+      "method": "matrix",
+      "seed": 42,
+      "compute_ns": 13919834000,
+      "loop_ns": 13919838000,
+      "grid_init_ns": 6000,
+      "first_50_ns": 3479674000,
+      "checksum": 1083986,
+      "process_seconds": 13.946640041001956
+    },
+    {
+      "method": "rectangle",
+      "seed": 42,
+      "compute_ns": 23344975000,
+      "loop_ns": 23344977000,
+      "grid_init_ns": 5000,
+      "first_50_ns": 11685668000,
+      "checksum": 1083986,
+      "process_seconds": 23.368564166004944
+    },
+    {
+      "method": "matrix_gpu",
+      "seed": 42,
+      "compute_ns": 26275738000,
+      "loop_ns": 26275772000,
+      "grid_init_ns": 6000,
+      "first_50_ns": 6390539000,
+      "checksum": 1083986,
+      "process_seconds": 26.301046374996076
+    },
+    {
+      "method": "square_exit",
+      "seed": 42,
+      "compute_ns": 17148000,
+      "loop_ns": 17150000,
+      "grid_init_ns": 8000,
+      "first_50_ns": 5616000,
+      "checksum": 1025835,
+      "process_seconds": 0.03327500000159489
+    },
+    {
+      "method": "matrix",
+      "seed": 43,
+      "compute_ns": 14602444000,
+      "loop_ns": 14602451000,
+      "grid_init_ns": 5000,
+      "first_50_ns": 3750608000,
+      "checksum": 1029097,
+      "process_seconds": 14.617245416993683
+    },
+    {
+      "method": "rectangle",
+      "seed": 43,
+      "compute_ns": 24460218000,
+      "loop_ns": 24460225000,
+      "grid_init_ns": 6000,
+      "first_50_ns": 12044875000,
+      "checksum": 1029097,
+      "process_seconds": 24.485212083003717
+    },
+    {
+      "method": "matrix_gpu",
+      "seed": 43,
+      "compute_ns": 27429681000,
+      "loop_ns": 27429707000,
+      "grid_init_ns": 6000,
+      "first_50_ns": 6537103000,
+      "checksum": 1029097,
+      "process_seconds": 27.456346790997486
+    },
+    {
+      "method": "square_exit",
+      "seed": 43,
+      "compute_ns": 15360000,
+      "loop_ns": 15364000,
+      "grid_init_ns": 5000,
+      "first_50_ns": 6189000,
+      "checksum": 1009219,
+      "process_seconds": 0.0356053340001381
+    },
+    {
+      "method": "random_walk",
+      "seed": 43,
+      "compute_ns": 140546000,
+      "loop_ns": 140549000,
+      "grid_init_ns": 5000,
+      "first_50_ns": 53881000,
+      "checksum": 970418,
+      "process_seconds": 0.16486950000398792
+    },
+    {
+      "method": "rectangle",
+      "seed": 44,
+      "compute_ns": 23797927000,
+      "loop_ns": 23797932000,
+      "grid_init_ns": 6000,
+      "first_50_ns": 12402242000,
+      "checksum": 1006066,
+      "process_seconds": 23.823954833002063
+    },
+    {
+      "method": "matrix_gpu",
+      "seed": 44,
+      "compute_ns": 27007447000,
+      "loop_ns": 27007478000,
+      "grid_init_ns": 8000,
+      "first_50_ns": 6432198000,
+      "checksum": 1006066,
+      "process_seconds": 27.03415254099673
+    },
+    {
+      "method": "square_exit",
+      "seed": 44,
+      "compute_ns": 15722000,
+      "loop_ns": 15729000,
+      "grid_init_ns": 6000,
+      "first_50_ns": 4938000,
+      "checksum": 1039485,
+      "process_seconds": 0.0345508329992299
+    },
+    {
+      "method": "random_walk",
+      "seed": 44,
+      "compute_ns": 117153000,
+      "loop_ns": 117156000,
+      "grid_init_ns": 5000,
+      "first_50_ns": 50026000,
+      "checksum": 1022840,
+      "process_seconds": 0.13309270799800288
+    },
+    {
+      "method": "matrix",
+      "seed": 44,
+      "compute_ns": 14883685000,
+      "loop_ns": 14883689000,
+      "grid_init_ns": 5000,
+      "first_50_ns": 3859006000,
+      "checksum": 1006066,
+      "process_seconds": 14.911699832999147
+    },
+    {
+      "method": "matrix_gpu",
+      "seed": 45,
+      "compute_ns": 26736806000,
+      "loop_ns": 26736836000,
+      "grid_init_ns": 9000,
+      "first_50_ns": 6376032000,
+      "checksum": 909531,
+      "process_seconds": 26.758818374997645
+    },
+    {
+      "method": "square_exit",
+      "seed": 45,
+      "compute_ns": 17113000,
+      "loop_ns": 17118000,
+      "grid_init_ns": 13000,
+      "first_50_ns": 6431000,
+      "checksum": 1035127,
+      "process_seconds": 0.0361088329955237
+    },
+    {
+      "method": "random_walk",
+      "seed": 45,
+      "compute_ns": 129197000,
+      "loop_ns": 129197000,
+      "grid_init_ns": 6000,
+      "first_50_ns": 47357000,
+      "checksum": 1062644,
+      "process_seconds": 0.15196650000143563
+    },
+    {
+      "method": "matrix",
+      "seed": 45,
+      "compute_ns": 14708307000,
+      "loop_ns": 14708310000,
+      "grid_init_ns": 5000,
+      "first_50_ns": 3720829000,
+      "checksum": 909531,
+      "process_seconds": 14.73500504099502
+    },
+    {
+      "method": "rectangle",
+      "seed": 45,
+      "compute_ns": 23250792000,
+      "loop_ns": 23250792000,
+      "grid_init_ns": 6000,
+      "first_50_ns": 12375592000,
+      "checksum": 909531,
+      "process_seconds": 23.2776160420035
+    },
+    {
+      "method": "square_exit",
+      "seed": 46,
+      "compute_ns": 16763000,
+      "loop_ns": 16765000,
+      "grid_init_ns": 5000,
+      "first_50_ns": 6164000,
+      "checksum": 1011862,
+      "process_seconds": 0.04423279100592481
+    },
+    {
+      "method": "random_walk",
+      "seed": 46,
+      "compute_ns": 109364000,
+      "loop_ns": 109366000,
+      "grid_init_ns": 6000,
+      "first_50_ns": 33698000,
+      "checksum": 1007971,
+      "process_seconds": 0.1350532079959521
+    },
+    {
+      "method": "matrix",
+      "seed": 46,
+      "compute_ns": 14585023000,
+      "loop_ns": 14585029000,
+      "grid_init_ns": 5000,
+      "first_50_ns": 3734534000,
+      "checksum": 983089,
+      "process_seconds": 14.61195008300274
+    },
+    {
+      "method": "rectangle",
+      "seed": 46,
+      "compute_ns": 24296239000,
+      "loop_ns": 24296244000,
+      "grid_init_ns": 6000,
+      "first_50_ns": 12277181000,
+      "checksum": 983089,
+      "process_seconds": 24.320158708993404
+    },
+    {
+      "method": "matrix_gpu",
+      "seed": 46,
+      "compute_ns": 24946512000,
+      "loop_ns": 24946544000,
+      "grid_init_ns": 5000,
+      "first_50_ns": 6094375000,
+      "checksum": 983089,
+      "process_seconds": 24.96138812499703
+    }
+  ],
+  "complete": true,
+  "statistics": {
+    "random_walk": {
+      "median_seconds": 0.117153,
+      "min_seconds": 0.1053,
+      "max_seconds": 0.140546,
+      "first_50_median_seconds": 0.047357,
+      "max_loop_overhead_seconds": 3e-06
+    },
+    "matrix": {
+      "median_seconds": 14.602444,
+      "min_seconds": 13.919834,
+      "max_seconds": 14.883685,
+      "first_50_median_seconds": 3.734534,
+      "max_loop_overhead_seconds": 7e-06
+    },
+    "rectangle": {
+      "median_seconds": 23.797927,
+      "min_seconds": 23.250792,
+      "max_seconds": 24.460218,
+      "first_50_median_seconds": 12.277181,
+      "max_loop_overhead_seconds": 7e-06
+    },
+    "matrix_gpu": {
+      "median_seconds": 26.736806,
+      "min_seconds": 24.946512,
+      "max_seconds": 27.429681,
+      "first_50_median_seconds": 6.390539,
+      "max_loop_overhead_seconds": 3.4e-05
+    },
+    "square_exit": {
+      "median_seconds": 0.016763,
+      "min_seconds": 0.01536,
+      "max_seconds": 0.017148,
+      "first_50_median_seconds": 0.006164,
+      "max_loop_overhead_seconds": 7e-06
+    }
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "date": "2026-11-06",
+  "source_revision": "09a35cf790ef0bd14d719e9cb411e475a1b7f607",
+  "source_sha256": {
+    "grid.mojo": "410d7e1f751daca7eb583724ca26ed7d3cae3b31e819cee7e559cfc1c374f933",
+    "research/blog_benchmark.mojo": "69d56be513d9156d39b433e31614193a5b27ab1b96bfb90157b6f378a828c132",
+    "algorithms/__init__.mojo": "6778da920a55a9e0668a3402ef2741da07854e29615d570ab3f00650ced24753",
+    "algorithms/gpu_solver.mojo": "bb3d51509d2de593942b8ddc7f3d8907a22247578f184e8e62f8f88177cbd30e",
+    "algorithms/linear_solver.mojo": "3684c8dead8ae7a1e4907580a39168c18354890bbf7ce87726dbbcfe2db1f288",
+    "algorithms/matrix.mojo": "46cdba39d4918740223d3c6f4d73d5803aa2e04af95c1e9659eded1ed641aa77",
+    "algorithms/matrix_gpu.mojo": "3c890e33c825f39cb814f02d35800537fbf08e097cabe0abb3acaa31f7fd3b51",
+    "algorithms/random_walk.mojo": "484eb0fa87a51b0c0b20e814f1d3f81b456d3dee22041bc71c369803648ff1ff",
+    "algorithms/rectangle.mojo": "81108c8fb9051ef85af1b31d66432d660215f57c0632115185673e8d423e8014",
+    "algorithms/square_exit.mojo": "318265830bfce65cd42a2d11b6a23f27d0b1cf69dd1da8b5135bb6be510f1695"
+  },
+  "hardware": "Apple M3 Pro",
+  "memory_bytes": 38654705664,
+  "os": "27.2",
+  "compiler": "Mojo 1.2.0 (2016d0cd)",
+  "grid": [
+    501,
+    501
+  ],
+  "particles": 2000,
+  "stickiness": 1.0,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "demo_seed": 42,
+  "build": "mojo build -O3 -I <temporary CPU source copy> research/blog_benchmark.mojo -o <binary>",
+  "build_adjustment": "Temporary grid copy excludes matrix_gpu import and replaces only its dispatch with an error; CPU algorithm sources unchanged. Required because installed Metal compiler component is unavailable.",
+  "timing": "Sum of spawn_and_stick_particle wall-clock durations; includes square-cache initialization and updates. Excludes grid construction, event capture, output, plotting, compilation. loop_ns includes timing and capture overhead. Both capture modes retain per-particle timers.",
+  "runs": [
+    {
+      "compute_ns": 38117968000,
+      "loop_ns": 38118119000,
+      "grid_init_ns": 128000,
+      "first_500_ns": 13485007000,
+      "checksum": 255033716,
+      "algorithm": "random_walk",
+      "seed": 42,
+      "capture": true,
+      "process_seconds": 38.14094920900243
+    },
+    {
+      "compute_ns": 1263970000,
+      "loop_ns": 1264025000,
+      "grid_init_ns": 128000,
+      "first_500_ns": 474566000,
+      "checksum": 253996279,
+      "algorithm": "square_exit",
+      "seed": 42,
+      "capture": true,
+      "process_seconds": 1.2998400420037797
+    },
+    {
+      "compute_ns": 39214626000,
+      "loop_ns": 39214744000,
+      "grid_init_ns": 135000,
+      "first_500_ns": 14941357000,
+      "checksum": 255033716,
+      "algorithm": "random_walk",
+      "seed": 42,
+      "capture": false,
+      "process_seconds": 39.23286637500132
+    },
+    {
+      "compute_ns": 1173913000,
+      "loop_ns": 1173945000,
+      "grid_init_ns": 124000,
+      "first_500_ns": 421919000,
+      "checksum": 253996279,
+      "algorithm": "square_exit",
+      "seed": 42,
+      "capture": false,
+      "process_seconds": 1.2005031669978052
+    },
+    {
+      "compute_ns": 1141860000,
+      "loop_ns": 1141900000,
+      "grid_init_ns": 127000,
+      "first_500_ns": 431677000,
+      "checksum": 248628038,
+      "algorithm": "square_exit",
+      "seed": 43,
+      "capture": false,
+      "process_seconds": 1.1671849169943016
+    },
+    {
+      "compute_ns": 38613397000,
+      "loop_ns": 38613507000,
+      "grid_init_ns": 114000,
+      "first_500_ns": 14356330000,
+      "checksum": 251946887,
+      "algorithm": "random_walk",
+      "seed": 43,
+      "capture": false,
+      "process_seconds": 38.63769137499912
+    },
+    {
+      "compute_ns": 1083970000,
+      "loop_ns": 1084001000,
+      "grid_init_ns": 116000,
+      "first_500_ns": 398787000,
+      "checksum": 248628038,
+      "algorithm": "square_exit",
+      "seed": 43,
+      "capture": true,
+      "process_seconds": 1.1054745410001487
+    },
+    {
+      "compute_ns": 37236459000,
+      "loop_ns": 37236608000,
+      "grid_init_ns": 127000,
+      "first_500_ns": 13184418000,
+      "checksum": 251946887,
+      "algorithm": "random_walk",
+      "seed": 43,
+      "capture": true,
+      "process_seconds": 37.26084450000053
+    },
+    {
+      "compute_ns": 39255249000,
+      "loop_ns": 39255470000,
+      "grid_init_ns": 119000,
+      "first_500_ns": 15015911000,
+      "checksum": 246084250,
+      "algorithm": "random_walk",
+      "seed": 44,
+      "capture": true,
+      "process_seconds": 39.275988166999014
+    },
+    {
+      "compute_ns": 1080095000,
+      "loop_ns": 1080143000,
+      "grid_init_ns": 252000,
+      "first_500_ns": 403108000,
+      "checksum": 249786069,
+      "algorithm": "square_exit",
+      "seed": 44,
+      "capture": true,
+      "process_seconds": 1.1176332920003915
+    },
+    {
+      "compute_ns": 37356382000,
+      "loop_ns": 37356454000,
+      "grid_init_ns": 119000,
+      "first_500_ns": 13495959000,
+      "checksum": 246084250,
+      "algorithm": "random_walk",
+      "seed": 44,
+      "capture": false,
+      "process_seconds": 37.38068799999746
+    },
+    {
+      "compute_ns": 1124477000,
+      "loop_ns": 1124514000,
+      "grid_init_ns": 127000,
+      "first_500_ns": 370759000,
+      "checksum": 249786069,
+      "algorithm": "square_exit",
+      "seed": 44,
+      "capture": false,
+      "process_seconds": 1.1490088330028811
+    },
+    {
+      "compute_ns": 1100451000,
+      "loop_ns": 1100493000,
+      "grid_init_ns": 127000,
+      "first_500_ns": 374822000,
+      "checksum": 245243763,
+      "algorithm": "square_exit",
+      "seed": 45,
+      "capture": false,
+      "process_seconds": 1.1240817080033594
+    },
+    {
+      "compute_ns": 38026804000,
+      "loop_ns": 38026899000,
+      "grid_init_ns": 118000,
+      "first_500_ns": 13461597000,
+      "checksum": 248275034,
+      "algorithm": "random_walk",
+      "seed": 45,
+      "capture": false,
+      "process_seconds": 38.05107500000304
+    },
+    {
+      "compute_ns": 1131557000,
+      "loop_ns": 1131595000,
+      "grid_init_ns": 153000,
+      "first_500_ns": 396958000,
+      "checksum": 245243763,
+      "algorithm": "square_exit",
+      "seed": 45,
+      "capture": true,
+      "process_seconds": 1.15685187499912
+    },
+    {
+      "compute_ns": 39724189000,
+      "loop_ns": 39724382000,
+      "grid_init_ns": 122000,
+      "first_500_ns": 13600336000,
+      "checksum": 248275034,
+      "algorithm": "random_walk",
+      "seed": 45,
+      "capture": true,
+      "process_seconds": 39.74673541700031
+    },
+    {
+      "compute_ns": 38312781000,
+      "loop_ns": 38312920000,
+      "grid_init_ns": 124000,
+      "first_500_ns": 14703134000,
+      "checksum": 247940064,
+      "algorithm": "random_walk",
+      "seed": 46,
+      "capture": true,
+      "process_seconds": 38.331144666997716
+    },
+    {
+      "compute_ns": 1102741000,
+      "loop_ns": 1102782000,
+      "grid_init_ns": 114000,
+      "first_500_ns": 394689000,
+      "checksum": 255177622,
+      "algorithm": "square_exit",
+      "seed": 46,
+      "capture": true,
+      "process_seconds": 1.1266706660026102
+    },
+    {
+      "compute_ns": 37734054000,
+      "loop_ns": 37734106000,
+      "grid_init_ns": 127000,
+      "first_500_ns": 14626887000,
+      "checksum": 247940064,
+      "algorithm": "random_walk",
+      "seed": 46,
+      "capture": false,
+      "process_seconds": 37.75414987499971
+    },
+    {
+      "compute_ns": 1202783000,
+      "loop_ns": 1202824000,
+      "grid_init_ns": 119000,
+      "first_500_ns": 461271000,
+      "checksum": 255177622,
+      "algorithm": "square_exit",
+      "seed": 46,
+      "capture": false,
+      "process_seconds": 1.2263337080003112
+    }
+  ],
+  "complete": true,
+  "statistics": {
+    "random_walk": {
+      "median_seconds": 38.312781,
+      "min_seconds": 37.236459,
+      "max_seconds": 39.724189,
+      "first_500_median_seconds": 13.600336,
+      "remaining_median_seconds": 24.239338,
+      "timing_only_median_seconds": 38.026804,
+      "max_loop_overhead_seconds": 0.000221
+    },
+    "square_exit": {
+      "median_seconds": 1.102741,
+      "min_seconds": 1.080095,
+      "max_seconds": 1.26397,
+      "first_500_median_seconds": 0.398787,
+      "remaining_median_seconds": 0.708052,
+      "timing_only_median_seconds": 1.14186,
+      "max_loop_overhead_seconds": 5.5e-05
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 210" role="img" aria-labelledby="title desc">
+<title id="title">Solve a smaller rectangle, preserve the exterior</title><desc id="desc">An inner rectangle contains the growing cluster. The empty exterior is cached. Arrows leave the inner boundary and return, illustrating why this is not a new reflecting wall.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="none" stroke="#7857c6" stroke-width="1.5"/></marker></defs>
+<rect x="5" y="5" width="350" height="200" rx="8" fill="#eef2f5"/>
+<g font-family="system-ui,sans-serif" font-size="14" fill="#435464"><text x="20" y="28">cached empty exterior</text></g>
+<rect x="133" y="42" width="167" height="138" fill="#ffffff" stroke="#146f7d" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="216" y="66" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#146f7d">solve inside</text>
+<path d="M207 93h17v17h17v17h-17v17h-17v-17h-17v-17h17z" fill="#253a50"/>
+<path d="M134 97C55 49 36 181 134 157" fill="none" stroke="#7857c6" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="18" y="194" font-family="system-ui,sans-serif" font-size="12" fill="#7857c6">leave and return — both still counted</text>
+</svg>

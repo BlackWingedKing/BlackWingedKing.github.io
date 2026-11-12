@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 210" role="img" aria-labelledby="title desc">
+<title id="title">A hybrid CPU and GPU probability solve</title><desc id="desc">CPU constructs the system, GPU computes FP32 corrections, CPU checks the FP64 residual. A failed tolerance check sends another correction to the GPU. A successful solve samples an attachment.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10" fill="none" stroke="#536477" stroke-width="1.5"/></marker></defs>
+<rect x="5" y="5" width="350" height="200" rx="8" fill="#eef2f5"/>
+<g fill="white" stroke="#c1cbd4"><rect x="16" y="35" width="92" height="65" rx="6"/><rect x="134" y="35" width="92" height="65" rx="6"/><rect x="252" y="35" width="92" height="65" rx="6"/></g>
+<g font-family="system-ui,sans-serif" font-size="14" text-anchor="middle" fill="#253a50"><text x="62" y="60">CPU</text><text x="62" y="82">build system</text><text x="180" y="60" fill="#146f7d">GPU</text><text x="180" y="82">FP32 solve</text><text x="298" y="60">CPU</text><text x="298" y="82">FP64 check</text></g>
+<g stroke="#536477" stroke-width="2" fill="none" marker-end="url(#arrow)"><path d="M109 68h23"/><path d="M227 68h23"/><path d="M298 102v27H180v-25"/><path d="M323 102v62H285"/></g>
+<text x="170" y="151" font-family="system-ui,sans-serif" font-size="12" fill="#536477">refine if needed</text>
+<rect x="184" y="158" width="100" height="31" rx="5" fill="#d5edf0"/><text x="234" y="178" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#146f7d">sample a site</text>
+</svg>

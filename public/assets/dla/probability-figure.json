@@ -1,0 +1,73 @@
+{
+  "size": 9,
+  "occupied": [
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      4
+    ]
+  ],
+  "sites": [
+    {
+      "x": 4,
+      "y": 2,
+      "probability": 0.17600789281908083,
+      "label": "A"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "probability": 0.1209831571712056,
+      "label": "B"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "probability": 0.08785405110268438,
+      "label": "C"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "probability": 0.06466131698296394,
+      "label": "D"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "probability": 0.1656484808310944,
+      "label": "E"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "probability": 0.12098315717120561,
+      "label": "F"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "probability": 0.0878540511026843,
+      "label": "G"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "probability": 0.17600789281908075,
+      "label": "H"
+    }
+  ],
+  "model": "Uniform empty outer-boundary launch; four equal cardinal attempts; blocked steps stay; p=1; one fixed 9x9 cluster.",
+  "sum": 0.9999999999999998
+}
